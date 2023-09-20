@@ -6,7 +6,7 @@ import TvedtenImg from '../resources/img/Tvedten.jpg';
 
 const Team: React.FC = () => {
   return (
-    <div className="container mt-5">
+    <div className="container mt-5 team-container">
       <div className="row">
         {/* Dr. Leonhard Horstmeyer */}
         <div className="col-md-4">
@@ -55,7 +55,7 @@ const Team: React.FC = () => {
         </div>
       </div>
 
-      <div className="mt-5 about-container">
+      <div className="mt-5">
         <p>
           Our core team consists of the performance artist, vocal improvisor, eurhythmician Li, the
           physicist Dr. Horstmeyer and the composer Tvedten. Whilst we have collaborated in pairs, we

@@ -25,7 +25,9 @@ function MyApp({ Component, pageProps }: AppProps) {
           <li className="nav-item"><a className="nav-link" href="/terms">Terms of Service</a></li>
           <li className="nav-item"><a className="nav-link" href="/privacy">Privacy Policy</a></li>
         </ul> */}
+        <div className="d-flex justify-content-center">
         Brough to you by Question Jams!
+        </div>
       </footer>
     </div>
   );

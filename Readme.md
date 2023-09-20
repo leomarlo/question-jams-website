@@ -53,3 +53,9 @@ mkdir website
 sudo chown -R ubuntu:ubuntu ~/website
 chmod -R 755 ~/website
 ```
+
+always run 
+
+```
+docker system prune -a
+```

@@ -45,8 +45,8 @@ const App: React.FC = () => {
 
   return (
     <React.StrictMode>
-      <div className="d-flex justify-content-center align-items-center vh-100">
-        <div className="p-5 text-black text-center">
+      <div className="d-flex justify-content-center vh-100">
+        <div className="p-3 text-black text-center">
           <h1 className="mb-3">Question Jams</h1>
           <div className="question-container-style my-4">
             <QuestionDisplay />

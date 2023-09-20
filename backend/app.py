@@ -20,7 +20,7 @@ app = Flask(__name__)
 
 @app.route('/button-endpoint', methods=['POST'])
 def button_endpoint():
-    return jsonify(message="Button was pressed!")
+    return jsonify(message="Why not?")
 
 # @app.route('/new-question', methods=['GET'])
 # def new_question_route():

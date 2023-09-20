@@ -57,6 +57,7 @@ COPY resources/ resources/
 COPY package.json .
 
 
+
 # copy tsconfig.json to website
 COPY tsconfig.json .
 
@@ -85,11 +86,16 @@ RUN yarn next:export
 # Copy the custom Apache config
 COPY frontend.conf /usr/local/apache2/conf/httpd.conf
 
+
+
 # RUN cp /usr/local/apache2/htdocs/index-2.html /usr/local/apache2/htdocs/index.html
 # RUN cp -r dist/* /usr/local/apache2/htdocs/
 
 RUN cp -r out/* /usr/local/apache2/htdocs/
 # RUN cp /usr/local/apache2/htdocs/index.html /usr/local/apache2/htdocs/index.html
+
+
+COPY .htaccess /usr/local/apache2/htdocs/.htaccess
 
 
 # Explicitly specify the command to run Apache in the foreground
