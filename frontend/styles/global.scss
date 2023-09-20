@@ -1,0 +1,88 @@
+// Override Bootstrap variables
+$primary: #6C5B7B; // Primary Purple
+$danger: #8C4646;  // Bordeaux Red
+$warning: #FFD3B5; // Warm Pastel Orange
+$success: #A8E6CF; // Pastel Green
+$secondary: #3C3C3C; // Anthracite silvery shimmer
+$info: #A2D2FF;      // Soft blue
+
+
+// Import Bootstrap after the overrides
+@import "~bootstrap/scss/bootstrap";
+
+/* styles/globals.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header, footer {
+  background-color: #e5e5e5;
+  padding: 1rem 0;
+}
+
+.about-container {
+  text-align: justify;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.question-style {
+  // font-family: 'Courier New', Courier, monospace; /* This is a common monospace font */
+  font-size: 44px; /* Adjust this value to make it as large as you want */
+}
+
+
+.question-container-style {
+  min-height: 200px;
+  align-items: center;
+}
+
+
+.bold-first-word {
+  font-weight: bold;
+  color: $danger;
+}
+
+.main-content {
+  padding-top: 8%; /* Adjust if your navbar height is different */
+  padding-bottom: 8%; /* Adjust if your footer height is different */
+  overflow-y: auto; /* To enable scrolling */
+}
+
+nav ul, footer ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li, footer li {
+  margin: 0 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* Scrollbar styles */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #6C5B7B; /* This is the purple color from the palette */
+  border-radius: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}

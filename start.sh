@@ -9,6 +9,8 @@ if [ "$1" == "--local" ]; then
     ## start backend
     echo "--> Starting backend flask server"
     cd backend
+    export FLASK_ENV=local
+    export REACT_APP_DEVELOPMENT_MODE=local
     .venv/bin/python app.py &
     sleep 3
     ## start frontend
@@ -22,10 +24,10 @@ elif [ "$1" == "--development" ]; then
     ## if the second argument is --build then echo hello, else say hi
     if [ "$2" == "--build" ]; then
         echo "--> Starting development environment with build"
-        docker-compose up --build -d
+        docker-compose up --build
     else
         echo "--> Starting development environment without build"
-        docker-compose up -d
+        docker-compose up
     fi
     echo "--> Done"
 elif [ "$1" == "--production" ]; then

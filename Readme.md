@@ -48,3 +48,8 @@ sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
+```
+mkdir website
+sudo chown -R ubuntu:ubuntu ~/website
+chmod -R 755 ~/website
+```

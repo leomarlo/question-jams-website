@@ -50,8 +50,12 @@ RUN rm -rf /var/lib/apt/lists/*
 # copy src to src
 COPY utils/ utils/
 COPY pages/ pages/
+COPY components/ components/
+COPY styles/ styles/
+COPY resources/ resources/
 # copy package.json to website
 COPY package.json .
+
 
 # copy tsconfig.json to website
 COPY tsconfig.json .
@@ -85,7 +89,7 @@ COPY frontend.conf /usr/local/apache2/conf/httpd.conf
 # RUN cp -r dist/* /usr/local/apache2/htdocs/
 
 RUN cp -r out/* /usr/local/apache2/htdocs/
-RUN cp /usr/local/apache2/htdocs/App.html /usr/local/apache2/htdocs/index.html
+# RUN cp /usr/local/apache2/htdocs/index.html /usr/local/apache2/htdocs/index.html
 
 
 # Explicitly specify the command to run Apache in the foreground

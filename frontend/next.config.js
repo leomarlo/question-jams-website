@@ -2,6 +2,9 @@ const Dotenv = require('dotenv-webpack');
 const webpack = require('webpack');
 
 module.exports = {
+  images: {
+    unoptimized: true
+  },
   webpack: (config) => {
     // Add the dotenv plugin
     // config.plugins.push(new Dotenv({ path: './frontend.env' }));
